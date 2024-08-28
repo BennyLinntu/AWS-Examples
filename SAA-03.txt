@@ -15,3 +15,8 @@ Buckets hold objects. Buckets can also have folders which in turn hold objects
 S3 is a universal namespace, so bucket names must be unique (think like having a domain name)
 You can store an individual object from 0 Bytes to 5 Terabytes in size
 
+# here we show some key command in S3
+s3: cp(), mv, rm, sync, mb, rb, ls
+s3api
+s3control
+s3outposts
