@@ -1,2 +1,2 @@
 # AWS-Examples
-A codebase of all the AWS examples used through AWS Certification Study
+A codebase of all the AWS SAA-03 examples used through AWS Certification Study
