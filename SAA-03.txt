@@ -20,3 +20,12 @@ s3: cp(), mv, rm, sync, mb, rb, ls
 s3api
 s3control
 s3outposts
+
+AWS S3 CLI Common Operations - Lab Notes
+Setp1: #Step 1: Setting Up AWS CLI Environment
+aws configure # Open CloudShell or Terminal
+export AWS_CLI_AUTO_PROMPT=on-partial #Enable Auto Prompt (Optional)
+Step2: #Creating an S3 Bucket
+aws s3api create-bucket --bucket benny-example  --region ap-southeast-2 --create-bucket-configuration LocationConstraint=ap-southeast-2 #Create a Bucket
+aws s3api list-buckets --query "Buckets[].Name" # List All Buckets
+
