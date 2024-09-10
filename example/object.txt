@@ -1,0 +1,19 @@
+1. May I add your name as a co-supervisor?
+2. Unet, Unet++, etc
+3. I would like to ask about the position of branch detection in the overall drone project. Is there a complete flowchart for the entire project?
+4.
+
+將分割得到的信息作業一個標記點，放到深度評估模型中。
+
+
+
+網頁引用的問題，一般如何引用。
+
+
+
+YOLO v7
+Mask rcnn
+Detectron2
+
+這邊已經非常驚艷了，所以下個問題是更複雜的dataset，會對這個產生大量不同的影響。
+

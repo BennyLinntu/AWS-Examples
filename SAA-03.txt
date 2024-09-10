@@ -27,5 +27,13 @@ aws configure # Open CloudShell or Terminal
 export AWS_CLI_AUTO_PROMPT=on-partial #Enable Auto Prompt (Optional)
 Step2: #Creating an S3 Bucket
 aws s3api create-bucket --bucket benny-example  --region ap-southeast-2 --create-bucket-configuration LocationConstraint=ap-southeast-2 #Create a Bucket
-aws s3api list-buckets --query "Buckets[].Name" # List All Buckets
+aws s3api list-buckets --query "Buckets[?Name=='benny-example']" # List All Buckets
+aws s3 cp "/workspace/AWS-SAA/object.txt" s3://benny-example/ # Upload a Single Object
+aws s3 sync "/workspace/AWS-SAA/example" s3://benny-example/ # Upload Multiple Objects Using Sync
+aws s3api list-objects --bucket benny-example --max-items 10
+aws s3 cp s3://benny-example/object.txt "/workspace/AWS-SAA/" # copy and paste
+aws s3 rm s3://benny-example/ --recursive # Delete All Objects in a Bucket Recursively
+aws s3api delete-bucket --bucket benny-example #Delete an Empty Bucket
 
+aws s3api head-object --bucket my-example-bucket-ab --key file.txt # Get Object Metadata
+aws s3api put-bucket-versioning --bucket my-example-bucket-ab --versioning-configuration Status=Enabled #Enable Versioning on a Bucket
